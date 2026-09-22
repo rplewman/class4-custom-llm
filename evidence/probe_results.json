@@ -1,0 +1,55 @@
+{
+  "note": "own diagnostic probe, not the 48-case eval; items unseen in both extension runs' training text",
+  "n_negation_items": 300,
+  "n_opposites_items": 288,
+  "results": {
+    "extension_v1_split_bug/untrained": {
+      "negation_copy": {
+        "n": 300,
+        "right_word_beats_other_word": 147,
+        "right_word_is_top_of_all_words": 0
+      },
+      "opposites": {
+        "n": 288,
+        "right_word_beats_other_word": 150,
+        "right_word_is_top_of_all_words": 0
+      }
+    },
+    "extension_v1_split_bug/final": {
+      "negation_copy": {
+        "n": 300,
+        "right_word_beats_other_word": 146,
+        "right_word_is_top_of_all_words": 41
+      },
+      "opposites": {
+        "n": 288,
+        "right_word_beats_other_word": 288,
+        "right_word_is_top_of_all_words": 285
+      }
+    },
+    "extension_v2_fixed/untrained": {
+      "negation_copy": {
+        "n": 300,
+        "right_word_beats_other_word": 155,
+        "right_word_is_top_of_all_words": 0
+      },
+      "opposites": {
+        "n": 288,
+        "right_word_beats_other_word": 148,
+        "right_word_is_top_of_all_words": 0
+      }
+    },
+    "extension_v2_fixed/final": {
+      "negation_copy": {
+        "n": 300,
+        "right_word_beats_other_word": 176,
+        "right_word_is_top_of_all_words": 84
+      },
+      "opposites": {
+        "n": 288,
+        "right_word_beats_other_word": 284,
+        "right_word_is_top_of_all_words": 281
+      }
+    }
+  }
+}

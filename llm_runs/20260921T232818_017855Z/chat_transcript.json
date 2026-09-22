@@ -1,0 +1,16 @@
+{
+  "model_sha256": "6c9ca5eef5eadf1ffbda8603af075a8d700ee0c7d6dbb64aff20ac023aca4cf9",
+  "completed_steps": 10,
+  "fresh_context_per_prompt": true,
+  "temperature": 0.8,
+  "max_tokens": 24,
+  "turns": [
+    {
+      "prompt": "the customer",
+      "seed": 2026,
+      "response": "pear professor bond doctor course harvest report physician journey checking buyer delivery payment report the local our offering and system <UNK> taste recommended mentioned",
+      "unknown_prompt_words": [],
+      "prompt_truncated": false
+    }
+  ]
+}

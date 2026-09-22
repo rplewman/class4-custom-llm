@@ -1,0 +1,420 @@
+hugo did not borrow the drill , he borrowed the spade , hugo borrowed the spade .
+hugo did not bring the blanket , he brought the guitar , hugo brought the guitar .
+hugo did not buy the kettle , he bought the scarf , so hugo bought the scarf .
+hugo did not choose the hat , he chose the painting , so hugo chose the painting .
+hugo did not choose the painting , he chose the hat , so hugo chose the hat .
+hugo did not cook the pasta , he cooked the beans , so hugo cooked the beans .
+hugo did not go to the bakery , he went to the cinema , hugo went to the cinema .
+hugo did not go to the bakery , he went to the park , hugo went to the park .
+hugo did not go to the cinema , he went to the market .
+hugo did not go to the cinema , he went to the park .
+hugo did not go to the garden , he went to the museum , hugo went to the museum .
+hugo did not go to the harbor , he went to the cinema , hugo went to the cinema .
+hugo did not go to the library , he went to the market , hugo went to the market .
+hugo did not go to the market , he went to the park .
+hugo did not go to the museum , he went to the park , hugo went to the park .
+hugo did not paint the shed , he painted the boat , so hugo painted the boat .
+hugo did not paint the wall , he painted the fence , hugo painted the fence .
+hugo did not pick the plum , he picked the cherry , hugo picked the cherry .
+hugo did not see the deer , he saw the heron .
+hugo did not see the fox , he saw the badger .
+hugo did not see the fox , he saw the hare , hugo saw the hare .
+hugo did not see the heron , he saw the deer , hugo saw the deer .
+hugo did not see the owl , he saw the heron .
+hugo did not take the coat , he took the ladder , so hugo took the ladder .
+hugo did not take the map , he took the ladder , hugo took the ladder .
+hugo did not take the umbrella , he took the coat , hugo took the coat .
+hugo said no to the plum and yes to the cherry .
+hugo wanted the carpet , but it was gone , so he chose the painting .
+hugo wanted the scarf , but it was gone , so he bought the radio .
+ines did not bring the guitar , she brought the cake , so ines brought the cake .
+ines did not bring the guitar , she brought the candles , ines brought the candles .
+ines did not buy the scarf , she bought the kettle , so ines bought the kettle .
+ines did not choose the painting , she chose the carpet , so ines chose the carpet .
+ines did not choose the painting , she chose the chair , so ines chose the chair .
+ines did not cook the pasta , she cooked the beans , ines cooked the beans .
+ines did not go to the bakery , she went to the market .
+ines did not go to the garden , she went to the museum , ines went to the museum .
+ines did not go to the library , she went to the bakery , ines went to the bakery .
+ines did not go to the market , she went to the harbor .
+ines did not go to the park , she went to the market , ines went to the market .
+ines did not paint the door , she painted the shed , ines painted the shed .
+ines did not paint the wall , she painted the door , ines painted the door .
+ines did not pick the lemon , she picked the melon , so ines picked the melon .
+ines did not pick the pumpkin , she picked the cherry , so ines picked the cherry .
+ines did not see the hare , she saw the fox , ines saw the fox .
+ines did not see the hare , she saw the heron , ines saw the heron .
+ines did not take the torch , she took the umbrella , ines took the umbrella .
+ines did not take the umbrella , she took the ladder , so ines took the ladder .
+ines said no to the ladder and yes to the book .
+ines said no to the map and yes to the coat .
+ines wanted the cherry , but it was gone , so she picked the lemon .
+ines wanted the drill , but it was gone , so she borrowed the bucket .
+ines wanted the eggs , but it was gone , so she cooked the pasta .
+ines wanted the spade , but it was gone , so she borrowed the book .
+it was not the beans that rosa cooked , it was the stew .
+it was not the blanket that lena brought , it was the cake .
+it was not the blanket that priya brought , it was the flowers .
+it was not the book that kofi borrowed , it was the spade .
+it was not the carpet that lena chose , it was the ring .
+it was not the cherry that hugo picked , it was the lemon .
+it was not the drill that ines borrowed , it was the ladder .
+it was not the drill that rosa borrowed , it was the ladder .
+it was not the fence that sam painted , it was the boat .
+it was not the flowers that nadia brought , it was the guitar .
+it was not the jacket that hugo bought , it was the lamp .
+it was not the kettle that tomas bought , it was the radio .
+it was not the lamp that omar bought , it was the kettle .
+it was not the lemon that ines picked , it was the plum .
+it was not the lemon that jin picked , it was the cherry .
+it was not the lemon that lena picked , it was the melon .
+it was not the melon that nadia picked , it was the pumpkin .
+it was not the melon that sam picked , it was the plum .
+it was not the painting that jin chose , it was the carpet .
+it was not the painting that kofi chose , it was the ring .
+it was not the pasta that tomas cooked , it was the eggs .
+it was not the plum that sam picked , it was the lemon .
+it was not the plum that sam picked , it was the melon .
+it was not the ring that ines chose , it was the hat .
+it was not the ring that lena chose , it was the carpet .
+it was not the spade that jin borrowed , it was the drill .
+it was not the umbrella that lena took , it was the map .
+it was not the umbrella that rosa took , it was the map .
+jin did not borrow the drill , he borrowed the book , so jin borrowed the book .
+jin did not borrow the drill , he borrowed the spade , jin borrowed the spade .
+jin did not buy the radio , he bought the kettle , jin bought the kettle .
+jin did not choose the hat , he chose the painting , so jin chose the painting .
+jin did not go to the bakery , he went to the garden , jin went to the garden .
+jin did not go to the bakery , he went to the harbor .
+jin did not go to the cinema , he went to the park , jin went to the park .
+jin did not go to the garden , he went to the cinema , jin went to the cinema .
+jin did not go to the harbor , he went to the garden , jin went to the garden .
+jin did not go to the harbor , he went to the market , jin went to the market .
+jin did not go to the park , he went to the cinema , jin went to the cinema .
+jin did not go to the park , he went to the market .
+jin did not pick the lemon , he picked the plum , jin picked the plum .
+jin did not pick the pumpkin , he picked the cherry , jin picked the cherry .
+jin did not see the hare , he saw the fox .
+jin did not see the heron , he saw the fox .
+jin did not see the owl , he saw the fox , jin saw the fox .
+jin did not see the owl , he saw the hare , jin saw the hare .
+jin said no to the kettle and yes to the ticket .
+jin said no to the pumpkin and yes to the melon .
+jin wanted the melon , but it was gone , so he picked the plum .
+jin wanted the painting , but it was gone , so he chose the chair .
+kofi did not borrow the book , he borrowed the ladder , kofi borrowed the ladder .
+kofi did not borrow the book , he borrowed the ladder , so kofi borrowed the ladder .
+kofi did not bring the blanket , he brought the candles , kofi brought the candles .
+kofi did not bring the cake , he brought the flowers , kofi brought the flowers .
+kofi did not buy the radio , he bought the kettle , kofi bought the kettle .
+kofi did not cook the stew , he cooked the pasta , kofi cooked the pasta .
+kofi did not go to the cinema , he went to the garden , kofi went to the garden .
+kofi did not go to the harbor , he went to the cinema .
+kofi did not go to the library , he went to the cinema .
+kofi did not go to the library , he went to the harbor , kofi went to the harbor .
+kofi did not go to the museum , he went to the market , kofi went to the market .
+kofi did not paint the boat , he painted the fence , kofi painted the fence .
+kofi did not paint the door , he painted the shed , so kofi painted the shed .
+kofi did not paint the wall , he painted the boat , kofi painted the boat .
+kofi did not pick the lemon , he picked the melon , kofi picked the melon .
+kofi did not pick the lemon , he picked the pumpkin , so kofi picked the pumpkin .
+kofi did not see the heron , he saw the hare , kofi saw the hare .
+kofi said no to the flowers and yes to the candles .
+kofi said no to the ladder and yes to the coat .
+kofi said no to the umbrella and yes to the torch .
+kofi wanted the book , but it was gone , so he borrowed the bucket .
+kofi wanted the jacket , but it was gone , so he bought the scarf .
+kofi wanted the pasta , but it was gone , so he cooked the eggs .
+kofi wanted the pumpkin , but it was gone , so he picked the melon .
+lena did not borrow the bucket , she borrowed the drill , lena borrowed the drill .
+lena did not bring the candles , she brought the guitar , so lena brought the guitar .
+lena did not bring the guitar , she brought the cake , so lena brought the cake .
+lena did not choose the hat , she chose the ring , so lena chose the ring .
+lena did not cook the beans , she cooked the eggs , lena cooked the eggs .
+lena did not cook the beans , she cooked the pasta , lena cooked the pasta .
+lena did not cook the fish , she cooked the eggs , so lena cooked the eggs .
+lena did not cook the stew , she cooked the beans , lena cooked the beans .
+lena did not cook the stew , she cooked the fish , so lena cooked the fish .
+lena did not go to the cinema , she went to the harbor , lena went to the harbor .
+lena did not go to the cinema , she went to the library , lena went to the library .
+lena did not go to the harbor , she went to the park , lena went to the park .
+lena did not go to the library , she went to the bakery , lena went to the bakery .
+lena did not go to the market , she went to the harbor , lena went to the harbor .
+lena did not go to the market , she went to the park , lena went to the park .
+lena did not paint the fence , she painted the door , lena painted the door .
+lena did not paint the fence , she painted the wall , so lena painted the wall .
+lena did not paint the wall , she painted the boat , lena painted the boat .
+lena did not pick the melon , she picked the cherry , lena picked the cherry .
+lena did not pick the melon , she picked the lemon , lena picked the lemon .
+lena did not pick the pumpkin , she picked the melon , lena picked the melon .
+lena did not see the badger , she saw the fox , lena saw the fox .
+lena did not see the badger , she saw the heron .
+lena did not take the ladder , she took the umbrella , lena took the umbrella .
+lena did not take the ladder , she took the umbrella , so lena took the umbrella .
+lena did not take the map , she took the umbrella , lena took the umbrella .
+lena did not take the torch , she took the coat , so lena took the coat .
+lena said no to the book and yes to the bucket .
+lena said no to the eggs and yes to the pasta .
+lena said no to the eggs and yes to the stew .
+lena said no to the painting and yes to the hat .
+lena said no to the ring and yes to the carpet .
+lena said no to the wall and yes to the fence .
+lena wanted the carpet , but it was gone , so she chose the painting .
+mei did not borrow the book , she borrowed the spade , mei borrowed the spade .
+mei did not borrow the ladder , she borrowed the drill , so mei borrowed the drill .
+mei did not buy the radio , she bought the kettle , so mei bought the kettle .
+mei did not choose the hat , she chose the carpet , mei chose the carpet .
+mei did not cook the eggs , she cooked the pasta , mei cooked the pasta .
+mei did not cook the stew , she cooked the fish , so mei cooked the fish .
+mei did not go to the bakery , she went to the museum .
+mei did not go to the garden , she went to the cinema , mei went to the cinema .
+mei did not go to the harbor , she went to the cinema , mei went to the cinema .
+mei did not go to the harbor , she went to the museum , mei went to the museum .
+mei did not go to the library , she went to the harbor , mei went to the harbor .
+mei did not go to the library , she went to the market , mei went to the market .
+mei did not go to the museum , she went to the garden .
+mei did not go to the park , she went to the garden , mei went to the garden .
+mei did not go to the park , she went to the museum , mei went to the museum .
+mei did not paint the shed , she painted the fence , so mei painted the fence .
+mei did not pick the pumpkin , she picked the lemon , mei picked the lemon .
+mei did not see the hare , she saw the deer , mei saw the deer .
+mei did not take the torch , she took the coat , mei took the coat .
+mei did not take the umbrella , she took the map , mei took the map .
+mei did not take the umbrella , she took the map , so mei took the map .
+mei said no to the fence and yes to the boat .
+mei said no to the flowers and yes to the cake .
+mei said no to the guitar and yes to the cake .
+mei said no to the painting and yes to the chair .
+mei said no to the spade and yes to the drill .
+mei wanted the blanket , but it was gone , so she brought the cake .
+mei wanted the jacket , but it was gone , so she bought the lamp .
+nadia did not bring the flowers , she brought the blanket , so nadia brought the blanket .
+nadia did not bring the guitar , she brought the candles , nadia brought the candles .
+nadia did not buy the radio , she bought the kettle , nadia bought the kettle .
+nadia did not choose the carpet , she chose the hat , nadia chose the hat .
+nadia did not choose the hat , she chose the chair , so nadia chose the chair .
+nadia did not choose the painting , she chose the chair , nadia chose the chair .
+nadia did not go to the bakery , she went to the park , nadia went to the park .
+nadia did not go to the bakery , she went to the park .
+nadia did not go to the garden , she went to the bakery , nadia went to the bakery .
+nadia did not go to the garden , she went to the cinema , nadia went to the cinema .
+nadia did not go to the library , she went to the park , nadia went to the park .
+nadia did not go to the market , she went to the garden , nadia went to the garden .
+nadia did not go to the market , she went to the museum .
+nadia did not go to the museum , she went to the cinema , nadia went to the cinema .
+nadia did not go to the park , she went to the market , nadia went to the market .
+nadia did not see the deer , she saw the hare , nadia saw the hare .
+nadia did not see the owl , she saw the badger .
+nadia did not see the owl , she saw the deer , nadia saw the deer .
+nadia said no to the fence and yes to the boat .
+nadia said no to the scarf and yes to the ticket .
+nadia wanted the eggs , but it was gone , so she cooked the stew .
+nadia wanted the plum , but it was gone , so she picked the melon .
+omar did not borrow the book , he borrowed the ladder , omar borrowed the ladder .
+omar did not borrow the bucket , he borrowed the drill , omar borrowed the drill .
+omar did not bring the blanket , he brought the flowers , so omar brought the flowers .
+omar did not cook the pasta , he cooked the beans , omar cooked the beans .
+omar did not cook the stew , he cooked the pasta , so omar cooked the pasta .
+omar did not go to the cinema , he went to the bakery , omar went to the bakery .
+omar did not go to the cinema , he went to the garden .
+omar did not go to the cinema , he went to the park , omar went to the park .
+omar did not go to the garden , he went to the park , omar went to the park .
+omar did not go to the market , he went to the library , omar went to the library .
+omar did not go to the park , he went to the cinema .
+omar did not see the badger , he saw the fox , omar saw the fox .
+omar did not see the badger , he saw the hare .
+omar did not see the heron , he saw the fox .
+omar said no to the fish and yes to the eggs .
+omar said no to the shed and yes to the boat .
+omar said no to the stew and yes to the eggs .
+omar wanted the drill , but it was gone , so he borrowed the bucket .
+priya did not borrow the spade , she borrowed the ladder , so priya borrowed the ladder .
+priya did not bring the cake , she brought the candles , so priya brought the candles .
+priya did not bring the candles , she brought the flowers , priya brought the flowers .
+priya did not bring the flowers , she brought the candles , priya brought the candles .
+priya did not bring the guitar , she brought the blanket , so priya brought the blanket .
+priya did not buy the scarf , she bought the kettle , so priya bought the kettle .
+priya did not buy the scarf , she bought the lamp , so priya bought the lamp .
+priya did not buy the ticket , she bought the radio , priya bought the radio .
+priya did not choose the carpet , she chose the hat , priya chose the hat .
+priya did not choose the chair , she chose the painting , so priya chose the painting .
+priya did not cook the beans , she cooked the fish , so priya cooked the fish .
+priya did not cook the stew , she cooked the beans , so priya cooked the beans .
+priya did not cook the stew , she cooked the pasta , priya cooked the pasta .
+priya did not go to the bakery , she went to the library , priya went to the library .
+priya did not go to the bakery , she went to the museum , priya went to the museum .
+priya did not go to the cinema , she went to the harbor , priya went to the harbor .
+priya did not go to the garden , she went to the market , priya went to the market .
+priya did not go to the museum , she went to the harbor , priya went to the harbor .
+priya did not paint the door , she painted the boat , so priya painted the boat .
+priya did not see the badger , she saw the hare , priya saw the hare .
+priya did not see the badger , she saw the owl , priya saw the owl .
+priya did not see the badger , she saw the owl .
+priya did not see the heron , she saw the fox , priya saw the fox .
+priya did not see the heron , she saw the hare .
+priya did not take the ladder , she took the torch , priya took the torch .
+priya did not take the umbrella , she took the torch , so priya took the torch .
+priya said no to the ring and yes to the carpet .
+priya wanted the door , but it was gone , so she painted the fence .
+rosa did not borrow the bucket , she borrowed the book , rosa borrowed the book .
+rosa did not borrow the drill , she borrowed the ladder , so rosa borrowed the ladder .
+rosa did not borrow the drill , she borrowed the spade , rosa borrowed the spade .
+rosa did not bring the blanket , she brought the flowers , rosa brought the flowers .
+rosa did not bring the blanket , she brought the guitar , so rosa brought the guitar .
+rosa did not buy the kettle , she bought the jacket , so rosa bought the jacket .
+rosa did not buy the lamp , she bought the scarf , rosa bought the scarf .
+rosa did not choose the hat , she chose the painting , rosa chose the painting .
+rosa did not cook the fish , she cooked the eggs , so rosa cooked the eggs .
+rosa did not cook the pasta , she cooked the fish , rosa cooked the fish .
+rosa did not go to the bakery , she went to the cinema .
+rosa did not go to the cinema , she went to the market .
+rosa did not go to the harbor , she went to the garden , rosa went to the garden .
+rosa did not go to the harbor , she went to the market .
+rosa did not go to the library , she went to the museum , rosa went to the museum .
+rosa did not go to the museum , she went to the cinema , rosa went to the cinema .
+rosa did not go to the museum , she went to the market , rosa went to the market .
+rosa did not go to the museum , she went to the market .
+rosa did not go to the museum , she went to the park , rosa went to the park .
+rosa did not go to the park , she went to the museum .
+rosa did not pick the cherry , she picked the melon , so rosa picked the melon .
+rosa did not pick the plum , she picked the melon , so rosa picked the melon .
+rosa did not pick the plum , she picked the pumpkin , rosa picked the pumpkin .
+rosa did not pick the pumpkin , she picked the lemon , so rosa picked the lemon .
+rosa did not see the badger , she saw the deer , rosa saw the deer .
+rosa did not see the deer , she saw the badger , rosa saw the badger .
+rosa did not take the map , she took the umbrella , rosa took the umbrella .
+rosa said no to the eggs and yes to the stew .
+rosa said no to the painting and yes to the hat .
+rosa wanted the fence , but it was gone , so she painted the wall .
+rosa wanted the fish , but it was gone , so she cooked the pasta .
+sam did not bring the blanket , they brought the guitar , so sam brought the guitar .
+sam did not bring the candles , they brought the flowers , so sam brought the flowers .
+sam did not bring the guitar , they brought the candles , so sam brought the candles .
+sam did not buy the jacket , they bought the lamp , so sam bought the lamp .
+sam did not choose the carpet , they chose the hat , sam chose the hat .
+sam did not choose the hat , they chose the painting , sam chose the painting .
+sam did not choose the ring , they chose the chair , so sam chose the chair .
+sam did not cook the pasta , they cooked the stew , so sam cooked the stew .
+sam did not go to the cinema , they went to the bakery , sam went to the bakery .
+sam did not go to the cinema , they went to the library , sam went to the library .
+sam did not go to the museum , they went to the harbor , sam went to the harbor .
+sam did not go to the museum , they went to the library , sam went to the library .
+sam did not go to the park , they went to the garden .
+sam did not paint the door , they painted the boat , sam painted the boat .
+sam did not paint the fence , they painted the boat , sam painted the boat .
+sam did not paint the shed , they painted the door , so sam painted the door .
+sam did not paint the shed , they painted the fence , sam painted the fence .
+sam did not paint the wall , they painted the boat , sam painted the boat .
+sam did not pick the plum , they picked the cherry , so sam picked the cherry .
+sam did not see the badger , they saw the owl , sam saw the owl .
+sam did not see the fox , they saw the deer .
+sam did not see the hare , they saw the deer , sam saw the deer .
+sam did not see the heron , they saw the fox .
+sam did not take the coat , they took the ladder , sam took the ladder .
+sam said no to the blanket and yes to the flowers .
+sam said no to the ticket and yes to the lamp .
+sam said no to the torch and yes to the ladder .
+sam said no to the umbrella and yes to the torch .
+the attic was not full , it was empty .
+the baby was not old , it was young .
+the bird was not low , it was high .
+the bush was not tall , it was short .
+the drum was not quiet , it was loud .
+the elephant was not small , it was big .
+the harbor was not dangerous , it was safe .
+the island was not near , it was far .
+the maze was not easy , it was difficult .
+the mountain was not near , it was far .
+the oak was not young , it was old .
+the ox was not weak , it was strong .
+the paper was not wet , it was dry .
+the rock was not soft , it was hard .
+the rope was not weak , it was strong .
+the sapling was not old , it was young .
+the school was not far , it was near .
+the shop did not have the boat , so lena painted the wall instead .
+the shop did not have the boat , so nadia painted the wall instead .
+the shop did not have the book , so hugo borrowed the spade instead .
+the shop did not have the book , so omar borrowed the spade instead .
+the shop did not have the bucket , so lena borrowed the spade instead .
+the shop did not have the cake , so kofi brought the flowers instead .
+the shop did not have the candles , so mei brought the blanket instead .
+the shop did not have the chair , so ines chose the ring instead .
+the shop did not have the cherry , so jin picked the melon instead .
+the shop did not have the coat , so mei took the map instead .
+the shop did not have the door , so nadia painted the boat instead .
+the shop did not have the drill , so omar borrowed the spade instead .
+the shop did not have the drill , so priya borrowed the book instead .
+the shop did not have the drill , so tomas borrowed the bucket instead .
+the shop did not have the ladder , so ines borrowed the bucket instead .
+the shop did not have the map , so mei took the torch instead .
+the shop did not have the map , so rosa took the ladder instead .
+the shop did not have the plum , so mei picked the cherry instead .
+the shop did not have the pumpkin , so rosa picked the cherry instead .
+the shop did not have the pumpkin , so tomas picked the melon instead .
+the shop did not have the ring , so jin chose the chair instead .
+the shop did not have the shed , so tomas painted the door instead .
+the shop did not have the spade , so ines borrowed the ladder instead .
+the shop did not have the wall , so nadia painted the fence instead .
+the singer was not sad , it was happy .
+the snow was not loud , it was quiet .
+the soup was not cold , it was hot .
+the sunrise was not late , it was early .
+the tower was not short , it was tall .
+the tree was not short , it was tall .
+the window was not closed , it was open .
+the wire was not thick , it was thin .
+there was no beans in the cupboard , only the pasta .
+there was no blanket in the bag , only the flowers .
+there was no book in the cupboard , only the ladder .
+there was no bucket in the bag , only the book .
+there was no bucket in the box , only the spade .
+there was no bucket in the drawer , only the book .
+there was no cake in the bag , only the flowers .
+there was no candles in the bag , only the guitar .
+there was no chair in the bag , only the ring .
+there was no chair in the cupboard , only the ring .
+there was no cherry in the bag , only the lemon .
+there was no door in the basket , only the boat .
+there was no door in the basket , only the wall .
+there was no drill in the bag , only the spade .
+there was no fence in the cupboard , only the door .
+there was no fish in the box , only the eggs .
+there was no ladder in the box , only the torch .
+there was no lamp in the basket , only the jacket .
+there was no plum in the box , only the lemon .
+there was no pumpkin in the box , only the cherry .
+there was no pumpkin in the drawer , only the lemon .
+there was no ring in the bag , only the hat .
+there was no scarf in the box , only the kettle .
+there was no shed in the basket , only the wall .
+there was no ticket in the basket , only the lamp .
+there was no ticket in the drawer , only the scarf .
+there was no torch in the box , only the map .
+tomas did not borrow the book , he borrowed the ladder , tomas borrowed the ladder .
+tomas did not borrow the drill , he borrowed the ladder , so tomas borrowed the ladder .
+tomas did not borrow the ladder , he borrowed the drill , tomas borrowed the drill .
+tomas did not bring the candles , he brought the flowers , so tomas brought the flowers .
+tomas did not bring the flowers , he brought the blanket , tomas brought the blanket .
+tomas did not bring the flowers , he brought the candles , tomas brought the candles .
+tomas did not buy the ticket , he bought the kettle , so tomas bought the kettle .
+tomas did not choose the carpet , he chose the ring , tomas chose the ring .
+tomas did not choose the hat , he chose the painting , so tomas chose the painting .
+tomas did not cook the eggs , he cooked the stew , so tomas cooked the stew .
+tomas did not go to the bakery , he went to the library .
+tomas did not go to the bakery , he went to the museum .
+tomas did not go to the museum , he went to the library , tomas went to the library .
+tomas did not go to the park , he went to the library .
+tomas did not paint the door , he painted the fence , so tomas painted the fence .
+tomas did not paint the door , he painted the fence , tomas painted the fence .
+tomas did not paint the wall , he painted the fence , tomas painted the fence .
+tomas did not pick the lemon , he picked the melon , so tomas picked the melon .
+tomas did not pick the melon , he picked the cherry , so tomas picked the cherry .
+tomas did not pick the melon , he picked the plum , so tomas picked the plum .
+tomas did not pick the pumpkin , he picked the lemon , tomas picked the lemon .
+tomas did not see the badger , he saw the heron , tomas saw the heron .
+tomas did not see the heron , he saw the fox , tomas saw the fox .
+tomas did not see the owl , he saw the heron .
+tomas said no to the cherry and yes to the melon .
+tomas said no to the ladder and yes to the bucket .
+tomas wanted the coat , but it was gone , so he took the ladder .

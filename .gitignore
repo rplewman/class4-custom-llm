@@ -1,11 +1,14 @@
 __pycache__/
 .ipynb_checkpoints/
 .venv/
-/llm_runs/
 names.txt
 .DS_Store
-/corpus/*
-!/corpus/README.md
+
+# Redundant with the tracked llm_runs/<run>/ folder contents; keep a copy locally per the
+# assignment's "save the results ZIP" instruction, but no need to publish both.
+llm_runs/*.zip
 
 /results/
+# Default chat.py transcript name if run without --transcript; my_chat.json and the copies
+# under evidence/ are the real, intentionally-published evidence.
 /chat_transcript.json

@@ -1,0 +1,12 @@
+number of parameters: 0.13M
+Tiny language model: short continuations, not a general assistant.
+Each prompt starts fresh. Context: 48 tokens. Type /quit to exit.
+You: Model: reviewed the brand after checking the price .
+You: Model: pasta .
+You: Model: drill .
+You: Model: light .
+You: Model: the local professor .
+Unknown words: capital, france, what
+You: Model: the different educator was student .
+Unknown words: hello, how
+You: Saved transcript: evidence\chat_transcript_ext_v2.json

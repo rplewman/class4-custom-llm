@@ -1,0 +1,420 @@
+a anvil is heavy while a balloon is light .
+a bakery is closed while a gate is open .
+a blanket is soft while a rock is hard .
+a bridge is safe while a storm is dangerous .
+a bridge is strong while a candle is weak .
+a bucket is full while a cupboard is empty .
+a cave is dark while a star is bright .
+a desert is dry while a sponge is wet .
+a door is closed while a museum is open .
+a door is closed while a window is open .
+a house is big while a mouse is small .
+a ice is thin while a wall is thick .
+a island is far while a park is near .
+a kitten is sad while a singer is happy .
+a landlord is rich while a servant is poor .
+a lesson is easy while a maze is difficult .
+a library is quiet while a drum is loud .
+a library is quiet while a storm is loud .
+a lid is closed while a gate is open .
+a market is near while a moon is far .
+a maze is difficult while a lesson is easy .
+a night is quiet while a storm is loud .
+a puppy is happy while a kitten is sad .
+a puppy is young while a ruin is old .
+a riddle is difficult while a game is easy .
+a storm is loud while a snow is quiet .
+a sun is bright while a cellar is dark .
+a sunrise is early while a midnight is late .
+a sunset is late while a sunrise is early .
+a truck is big while a mouse is small .
+a wall is hard while a pillow is soft .
+a window is open while a bakery is closed .
+big and small are opposites .
+bright and dark are opposites .
+bright is the opposite of dark .
+cheap and expensive are opposites .
+clean and dirty are opposites .
+clean is the opposite of dirty .
+dangerous and safe are opposites .
+dangerous is the opposite of safe .
+dark is the opposite of bright .
+difficult and easy are opposites .
+dry and wet are opposites .
+early is the opposite of late .
+easy and difficult are opposites .
+easy is the opposite of difficult .
+empty and full are opposites .
+expensive and cheap are opposites .
+far and near are opposites .
+far is the opposite of near .
+full and empty are opposites .
+full is the opposite of empty .
+happy is the opposite of sad .
+hard is the opposite of soft .
+heavy is the opposite of light .
+hot and cold are opposites .
+hot is the opposite of cold .
+hugo felt the beggar was poor , not rich .
+hugo felt the king was rich , not poor .
+hugo felt the leaf was light , not heavy .
+hugo felt the market was near , not far .
+hugo felt the plate was clean , not dirty .
+hugo felt the snow was quiet , not loud .
+hugo wanted something cold , but the oven was hot .
+hugo wanted something dirty , but the shirt was clean .
+hugo wanted something expensive , but the pebble was cheap .
+hugo wanted something open , but the door was closed .
+if the bakery is closed , it is not open .
+if the banker is rich , it is not poor .
+if the blanket is soft , it is not hard .
+if the breakfast is early , it is not late .
+if the candle is weak , it is not strong .
+if the cellar is dark , it is not bright .
+if the cliff is dangerous , it is not safe .
+if the crowd is loud , it is not quiet .
+if the cupboard is empty , it is not full .
+if the diamond is expensive , it is not cheap .
+if the feather is light , it is not heavy .
+if the grass is wet , it is not dry .
+if the harbor is safe , it is not dangerous .
+if the horse is fast , it is not slow .
+if the ice is thin , it is not thick .
+if the library is quiet , it is not loud .
+if the morning is early , it is not late .
+if the mountain is far , it is not near .
+if the oven is hot , it is not cold .
+if the park is near , it is not far .
+if the rabbit is fast , it is not slow .
+if the rocket is fast , it is not slow .
+if the song is easy , it is not difficult .
+if the star is bright , it is not dark .
+if the traveler is sad , it is not happy .
+if the tree is tall , it is not short .
+if the truck is big , it is not small .
+if the twig is weak , it is not strong .
+if the valley is low , it is not high .
+if the wall is thick , it is not thin .
+ines felt the dinner was late , not early .
+ines felt the drum was loud , not quiet .
+ines felt the valley was low , not high .
+ines wanted something closed , but the window was open .
+ines wanted something old , but the puppy was young .
+jin felt the house was big , not small .
+jin felt the ice was cold , not hot .
+jin felt the midnight was late , not early .
+jin felt the star was bright , not dark .
+jin felt the suitcase was heavy , not light .
+jin wanted something dark , but the sun was bright .
+kofi felt the balloon was light , not heavy .
+kofi felt the sapling was young , not old .
+kofi felt the sock was dirty , not clean .
+kofi felt the star was bright , not dark .
+kofi wanted something dangerous , but the bridge was safe .
+kofi wanted something dry , but the sponge was wet .
+kofi wanted something late , but the breakfast was early .
+kofi wanted something quiet , but the storm was loud .
+kofi wanted something weak , but the bridge was strong .
+lena felt the diamond was expensive , not cheap .
+lena felt the lamp was bright , not dark .
+lena felt the puppy was happy , not sad .
+lena wanted something dangerous , but the bridge was safe .
+lena wanted something dirty , but the shirt was clean .
+lena wanted something empty , but the stadium was full .
+lena wanted something old , but the sapling was young .
+lena wanted something small , but the house was big .
+lena wanted something wet , but the desert was dry .
+light and heavy are opposites .
+loud and quiet are opposites .
+loud is the opposite of quiet .
+low is the opposite of high .
+mei felt the suitcase was heavy , not light .
+mei wanted something late , but the morning was early .
+mei wanted something low , but the shelf was high .
+mei wanted something weak , but the rope was strong .
+nadia felt the fog was low , not high .
+nadia felt the gate was open , not closed .
+nadia felt the landlord was rich , not poor .
+nadia felt the library was quiet , not loud .
+nadia felt the night was quiet , not loud .
+nadia felt the riddle was difficult , not easy .
+nadia felt the suitcase was heavy , not light .
+nadia wanted something small , but the elephant was big .
+nadia wanted something soft , but the rock was hard .
+nadia wanted something thin , but the blanket was thick .
+near and far are opposites .
+next to the bird , the ditch looked low .
+next to the blanket , the wire looked thin .
+next to the bucket , the attic looked empty .
+next to the cellar , the lamp looked bright .
+next to the cellar , the sun looked bright .
+next to the coin , the house looked big .
+next to the crowd , the library looked quiet .
+next to the cupboard , the jar looked full .
+next to the door , the window looked open .
+next to the drum , the night looked quiet .
+next to the elephant , the coin looked small .
+next to the fence , the tree looked tall .
+next to the fog , the bird looked high .
+next to the game , the riddle looked difficult .
+next to the giraffe , the stool looked short .
+next to the girl , the singer looked happy .
+next to the kitten , the puppy looked happy .
+next to the lamp , the cellar looked dark .
+next to the leaf , the anvil looked heavy .
+next to the maze , the lesson looked easy .
+next to the maze , the song looked easy .
+next to the museum , the lid looked closed .
+next to the pebble , the castle looked expensive .
+next to the riddle , the game looked easy .
+next to the servant , the landlord looked rich .
+next to the shelter , the jungle looked dangerous .
+next to the shirt , the boots looked dirty .
+next to the soup , the lake looked cold .
+next to the star , the tunnel looked dark .
+next to the storm , the library looked quiet .
+next to the sun , the cave looked dark .
+next to the sun , the tunnel looked dark .
+next to the thread , the ox looked strong .
+next to the towel , the paper looked dry .
+next to the towel , the sand looked dry .
+next to the tractor , the rocket looked fast .
+next to the traveler , the child looked happy .
+next to the valley , the shelf looked high .
+next to the window , the door looked closed .
+omar felt the breakfast was early , not late .
+omar felt the child was happy , not sad .
+omar felt the feather was light , not heavy .
+omar felt the rock was hard , not soft .
+omar wanted something short , but the giraffe was tall .
+omar wanted something tall , but the fence was short .
+omar wanted something wet , but the paper was dry .
+omar wanted something wet , but the sand was dry .
+open and closed are opposites .
+open is the opposite of closed .
+poor and rich are opposites .
+priya felt the elephant was big , not small .
+priya felt the kitchen was clean , not dirty .
+priya felt the library was quiet , not loud .
+priya felt the maze was difficult , not easy .
+priya felt the sapling was young , not old .
+priya felt the seed was small , not big .
+priya felt the sunset was late , not early .
+priya wanted something dark , but the star was bright .
+priya wanted something difficult , but the game was easy .
+priya wanted something old , but the sapling was young .
+priya wanted something rich , but the beggar was poor .
+quiet and loud are opposites .
+rich and poor are opposites .
+rosa felt the anvil was heavy , not light .
+rosa felt the blanket was thick , not thin .
+rosa felt the candle was cheap , not expensive .
+rosa felt the ditch was low , not high .
+rosa felt the elephant was big , not small .
+rosa felt the star was bright , not dark .
+rosa felt the sunrise was early , not late .
+rosa felt the sunset was late , not early .
+rosa felt the yacht was expensive , not cheap .
+rosa wanted something expensive , but the pencil was cheap .
+rosa wanted something light , but the suitcase was heavy .
+rosa wanted something low , but the shelf was high .
+rosa wanted something slow , but the rabbit was fast .
+safe is the opposite of dangerous .
+sam felt the baby was young , not old .
+sam felt the book was thick , not thin .
+sam felt the cloud was high , not low .
+sam felt the leaf was light , not heavy .
+sam felt the sponge was wet , not dry .
+sam wanted something dangerous , but the bridge was safe .
+sam wanted something poor , but the landlord was rich .
+sam wanted something short , but the giraffe was tall .
+sam wanted something tall , but the fence was short .
+short is the opposite of tall .
+slow is the opposite of fast .
+small is the opposite of big .
+soft is the opposite of hard .
+strong is the opposite of weak .
+tall and short are opposites .
+tall is the opposite of short .
+the anvil was heavy but the balloon was light .
+the baby was young but the grandfather was old .
+the banker was rich but the servant was poor .
+the bird was high but the fog was low .
+the bottle is empty , so its opposite would be full .
+the breakfast is early , so its opposite would be late .
+the bucket was full but the cupboard was empty .
+the castle was expensive but the pencil was cheap .
+the cave is dark , so its opposite would be bright .
+the child is happy , so its opposite would be sad .
+the cloud is high , so its opposite would be low .
+the coin is small , so its opposite would be big .
+the crowd is loud , so its opposite would be quiet .
+the cupboard was empty but the jar was full .
+the diamond is expensive , so its opposite would be cheap .
+the ditch is low , so its opposite would be high .
+the ditch was low but the cloud was high .
+the elephant was big but the mouse was small .
+the fence is short , so its opposite would be tall .
+the fence was short but the giraffe was tall .
+the floor is hard , so its opposite would be soft .
+the game was easy but the maze was difficult .
+the giraffe was tall but the bush was short .
+the house is big , so its opposite would be small .
+the island was far but the school was near .
+the kitten was sad but the child was happy .
+the lamp is bright , so its opposite would be dark .
+the lamp was bright but the cave was dark .
+the maze was difficult but the game was easy .
+the midnight is late , so its opposite would be early .
+the morning is early , so its opposite would be late .
+the museum was open but the bakery was closed .
+the oak was old but the puppy was young .
+the oven was hot but the wind was cold .
+the park was near but the moon was far .
+the pencil is cheap , so its opposite would be expensive .
+the puppy is young , so its opposite would be old .
+the puppy was happy but the traveler was sad .
+the puppy was young but the grandfather was old .
+the rabbit is fast , so its opposite would be slow .
+the rock was heavy but the feather was light .
+the rocket is fast , so its opposite would be slow .
+the rocket was fast but the tractor was slow .
+the rocket was fast but the turtle was slow .
+the rope was strong but the twig was weak .
+the sand is dry , so its opposite would be wet .
+the sapling was young but the ruin was old .
+the seed is small , so its opposite would be big .
+the shelf is high , so its opposite would be low .
+the snow is quiet , so its opposite would be loud .
+the soup is hot , so its opposite would be cold .
+the sun is bright , so its opposite would be dark .
+the sunrise is early , so its opposite would be late .
+the towel was wet but the desert was dry .
+the traveler was sad but the puppy was happy .
+the turtle was slow but the rabbit was fast .
+the valley is low , so its opposite would be high .
+the valley was low but the cloud was high .
+the wall is hard , so its opposite would be soft .
+the wall was hard but the pillow was soft .
+the wire is thin , so its opposite would be thick .
+the words big and small mean opposite things .
+the words cheap and expensive mean opposite things .
+the words closed and open mean opposite things .
+the words cold and hot mean opposite things .
+the words dark and bright mean opposite things .
+the words difficult and easy mean opposite things .
+the words dirty and clean mean opposite things .
+the words dry and wet mean opposite things .
+the words early and late mean opposite things .
+the words easy and difficult mean opposite things .
+the words empty and full mean opposite things .
+the words expensive and cheap mean opposite things .
+the words far and near mean opposite things .
+the words fast and slow mean opposite things .
+the words full and empty mean opposite things .
+the words happy and sad mean opposite things .
+the words hard and soft mean opposite things .
+the words heavy and light mean opposite things .
+the words hot and cold mean opposite things .
+the words light and heavy mean opposite things .
+the words loud and quiet mean opposite things .
+the words low and high mean opposite things .
+the words near and far mean opposite things .
+the words old and young mean opposite things .
+the words poor and rich mean opposite things .
+the words quiet and loud mean opposite things .
+the words sad and happy mean opposite things .
+the words safe and dangerous mean opposite things .
+the words small and big mean opposite things .
+the words strong and weak mean opposite things .
+the words tall and short mean opposite things .
+the words thick and thin mean opposite things .
+the words thin and thick mean opposite things .
+thick is the opposite of thin .
+thin and thick are opposites .
+tomas felt the bridge was strong , not weak .
+tomas felt the morning was early , not late .
+tomas felt the night was quiet , not loud .
+tomas felt the tree was tall , not short .
+tomas felt the truck was big , not small .
+tomas wanted something tall , but the stool was short .
+we describe the beggar as poor and the landlord as rich , which are opposites .
+we describe the blanket as soft and the wall as hard , which are opposites .
+we describe the bottle as empty and the bucket as full , which are opposites .
+we describe the bottle as empty and the jar as full , which are opposites .
+we describe the bucket as full and the attic as empty , which are opposites .
+we describe the feather as light and the rock as heavy , which are opposites .
+we describe the feather as light and the suitcase as heavy , which are opposites .
+we describe the fog as low and the cloud as high , which are opposites .
+we describe the giraffe as tall and the stool as short , which are opposites .
+we describe the girl as sad and the singer as happy , which are opposites .
+we describe the king as rich and the servant as poor , which are opposites .
+we describe the kitchen as clean and the boots as dirty , which are opposites .
+we describe the landlord as rich and the servant as poor , which are opposites .
+we describe the leaf as light and the rock as heavy , which are opposites .
+we describe the lesson as easy and the exam as difficult , which are opposites .
+we describe the mouse as small and the house as big , which are opposites .
+we describe the oak as old and the sapling as young , which are opposites .
+we describe the oven as hot and the ice as cold , which are opposites .
+we describe the peasant as poor and the king as rich , which are opposites .
+we describe the servant as poor and the king as rich , which are opposites .
+we describe the shirt as clean and the boots as dirty , which are opposites .
+we describe the star as bright and the cellar as dark , which are opposites .
+we describe the star as bright and the tunnel as dark , which are opposites .
+we describe the suitcase as heavy and the balloon as light , which are opposites .
+we describe the truck as big and the coin as small , which are opposites .
+we describe the truck as big and the seed as small , which are opposites .
+we describe the turtle as slow and the rocket as fast , which are opposites .
+we describe the yacht as expensive and the candle as cheap , which are opposites .
+wet and dry are opposites .
+you say big for the truck and small for the mouse .
+you say bright for the sun and dark for the cellar .
+you say cheap for the pencil and expensive for the castle .
+you say clean for the kitchen and dirty for the puddle .
+you say clean for the shirt and dirty for the boots .
+you say clean for the shirt and dirty for the puddle .
+you say closed for the door and open for the gate .
+you say cold for the wind and hot for the oven .
+you say dark for the cave and bright for the sun .
+you say dry for the sand and wet for the sponge .
+you say early for the breakfast and late for the dinner .
+you say early for the morning and late for the dinner .
+you say easy for the song and difficult for the maze .
+you say expensive for the diamond and cheap for the pencil .
+you say far for the moon and near for the market .
+you say fast for the rabbit and slow for the snail .
+you say happy for the puppy and sad for the kitten .
+you say hard for the floor and soft for the cotton .
+you say hard for the wall and soft for the pillow .
+you say heavy for the anvil and light for the balloon .
+you say high for the bird and low for the valley .
+you say high for the cloud and low for the ditch .
+you say hot for the bath and cold for the ice .
+you say hot for the oven and cold for the wind .
+you say hot for the soup and cold for the ice .
+you say late for the sunset and early for the breakfast .
+you say light for the leaf and heavy for the anvil .
+you say loud for the storm and quiet for the night .
+you say low for the fog and high for the shelf .
+you say near for the market and far for the mountain .
+you say old for the grandfather and young for the puppy .
+you say open for the museum and closed for the lid .
+you say quiet for the library and loud for the storm .
+you say rich for the banker and poor for the peasant .
+you say sad for the traveler and happy for the child .
+you say sad for the traveler and happy for the singer .
+you say short for the bush and tall for the tree .
+you say short for the fence and tall for the tower .
+you say soft for the blanket and hard for the floor .
+you say soft for the pillow and hard for the wall .
+you say strong for the rope and weak for the thread .
+you say tall for the tower and short for the stool .
+you say tall for the tree and short for the fence .
+you say thick for the blanket and thin for the paper .
+you say thick for the blanket and thin for the wire .
+you say thick for the wall and thin for the ice .
+you say thin for the ice and thick for the book .
+you say wet for the grass and dry for the desert .
+you say young for the baby and old for the ruin .
+you say young for the sapling and old for the grandfather .
+young and old are opposites .

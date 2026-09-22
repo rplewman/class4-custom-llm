@@ -1,0 +1,49 @@
+id,group,category,prompt,starter_untrained,starter_trained,expanded_untrained,expanded_trained
+lang_01,starter_patterns,domain_context,the report about the customer explains the,wrong (juice),correct (service),wrong (traffic),correct (service)
+lang_02,starter_patterns,domain_context,the report about the merchandise explains the,wrong (lesson),correct (quality),correct (quality),correct (quality)
+lang_03,starter_patterns,domain_context,the report about the mortgage explains the,wrong (harvest),correct (payment),wrong (route),correct (payment)
+lang_04,starter_patterns,domain_context,the report about the mango explains the,correct (juice),correct (juice),wrong (risk),correct (juice)
+lang_05,starter_patterns,domain_context,the report about the bicycle explains the,correct (journey),correct (journey),wrong (learning),correct (journey)
+lang_06,starter_patterns,domain_context,the report about the application explains the,wrong (student),correct (security),correct (security),correct (security)
+lang_07,starter_patterns,domain_context,the report about the surgeon explains the,correct (patient),correct (patient),wrong (fruit),correct (patient)
+lang_08,starter_patterns,domain_context,the report about the tutor explains the,wrong (journey),correct (lesson),wrong (interest),correct (lesson)
+lang_09,starter_patterns,domain_place,the team discussed the customer and the service at the,correct (store),correct (store),wrong (bank),correct (store)
+lang_10,starter_patterns,domain_place,the team discussed the merchandise and the quality at the,wrong (station),correct (market),wrong (station),correct (market)
+lang_11,starter_patterns,domain_place,the team discussed the mortgage and the payment at the,wrong (station),correct (bank),wrong (station),correct (bank)
+lang_12,starter_patterns,domain_place,the team discussed the mango and the juice at the,wrong (hospital),correct (kitchen),wrong (station),correct (kitchen)
+lang_13,starter_patterns,domain_place,the team discussed the bicycle and the journey at the,wrong (school),correct (station),correct (station),correct (station)
+lang_14,starter_patterns,domain_place,the team discussed the application and the security at the,wrong (store),correct (office),wrong (bank),correct (office)
+lang_15,starter_patterns,domain_place,the team discussed the surgeon and the patient at the,correct (hospital),correct (hospital),wrong (bank),correct (hospital)
+lang_16,starter_patterns,domain_place,the team discussed the tutor and the lesson at the,correct (school),correct (school),wrong (station),correct (school)
+lang_17,starter_transfer,new_wording,our hospital discussed the nurse and the,correct (health),correct (health),correct (health),correct (health)
+lang_18,starter_transfer,new_wording,yesterday the school discussed the educator and the,wrong (risk),wrong (harvest),correct (student),correct (student)
+lang_19,starter_transfer,new_wording,the bank report discussed the bond and the,wrong (taste),wrong (care),correct (return),correct (return)
+lang_20,starter_transfer,new_wording,our kitchen report discussed the pear and the,correct (fruit),correct (fruit),wrong (order),correct (fruit)
+lang_21,starter_transfer,new_wording,the station report compared the bus and the,wrong (lesson),correct (route),wrong (patient),correct (route)
+lang_22,starter_transfer,new_wording,yesterday our office discussed the platform and the,correct (update),wrong (treatment),correct (update),correct (update)
+lang_23,starter_transfer,new_wording,the store report discussed the subscriber and the,wrong (health),wrong (health),wrong (interest),correct (support)
+lang_24,starter_transfer,new_wording,our market report compared the package and the,wrong (student),correct (delivery),wrong (student),correct (delivery)
+lang_25,extend_corpus,grammar,one bird,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_26,extend_corpus,grammar,the dogs,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_27,extend_corpus,grammar,yesterday she,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_28,extend_corpus,opposites,the opposite of hot is,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_29,extend_corpus,opposites,the opposite of empty is,out_of_vocabulary,out_of_vocabulary,wrong (quiet),correct (full)
+lang_30,extend_corpus,opposites,the opposite of noisy is,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_31,extend_corpus,negation,the box is not red . it is blue . the box is,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_32,extend_corpus,negation,ava did not buy tea . she bought milk . ava bought,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_33,extend_corpus,negation,the door is not open . it is closed . the door is,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_34,extend_corpus,reference,maya lent a book to leo . leo thanked,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_35,extend_corpus,reference,ella gave finn a pencil . the person who received the pencil was,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_36,extend_corpus,reference,omar called nina . nina answered the call from,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_37,extend_corpus,sequence,first wash the cup . then dry it . the last action is,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_38,extend_corpus,sequence,lunch happens after breakfast . the earlier meal is,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_39,extend_corpus,sequence,the train arrived before the bus . the vehicle that arrived later was the,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_40,extend_corpus,spatial_relations,the book is inside the bag . the bag contains the,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_41,extend_corpus,spatial_relations,the lamp is above the desk . the desk is,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_42,extend_corpus,spatial_relations,the ball is left of the box . the box is to the,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_43,extend_corpus,everyday_knowledge,water freezes into,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_44,extend_corpus,everyday_knowledge,a person uses an umbrella to stay,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_45,extend_corpus,everyday_knowledge,to see in a dark room we turn on a,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_46,extend_corpus,categories_and_analogies,a robin is a bird . a salmon is a,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_47,extend_corpus,categories_and_analogies,a puppy grows into a dog . a kitten grows into a,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary
+lang_48,extend_corpus,categories_and_analogies,a carrot is a vegetable . an apple is a,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary,out_of_vocabulary

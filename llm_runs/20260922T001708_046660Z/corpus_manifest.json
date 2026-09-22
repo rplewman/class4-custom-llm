@@ -1,0 +1,33 @@
+{
+  "files": [
+    {
+      "file": "negation.txt",
+      "bytes": 28960,
+      "sha256": "b4368d8b85f904f9ef1eb87f0e6928cce7d18701dfdf124e701d79b514ded94a",
+      "warnings": [],
+      "characters": 28960,
+      "passages": 420,
+      "unique_passages": 420,
+      "preview": "hugo did not borrow the drill , he borrowed the spade , hugo borrowed the spade .\r\nhugo did not bring the blanket , he brought the guitar , hugo brought the guitar .\r\nhugo did not buy the kettle , he bought the scarf , so hugo bought the scarf .\r\nhugo did not choose the hat , he chose the painting ,"
+    },
+    {
+      "file": "opposites.txt",
+      "bytes": 20596,
+      "sha256": "0d7817af12d10be4d8ead3ed6d9550ed3127047324b14d455b99837d5c33d2ee",
+      "warnings": [],
+      "characters": 20596,
+      "passages": 420,
+      "unique_passages": 420,
+      "preview": "a anvil is heavy while a balloon is light .\r\na bakery is closed while a gate is open .\r\na blanket is soft while a rock is hard .\r\na bridge is safe while a storm is dangerous .\r\na bridge is strong while a candle is weak .\r\na bucket is full while a cupboard is empty .\r\na cave is dark while a star is b"
+    }
+  ],
+  "ignored": [],
+  "external_passages": 840,
+  "mode": "classroom",
+  "base_passages": 6200,
+  "unique_passages": 5432,
+  "new_unique_passages": 840,
+  "duplicates_removed": 1608,
+  "max_passage_tokens": 47,
+  "split_unit": "deduplicated passage, not source file"
+}
