@@ -14,16 +14,22 @@ Environment: Windows 11, CPU only, Python 3.12.10, PyTorch 2.14.0+cpu, run in a 
 
 | Run | Folder | What it was | Result |
 |---|---|---|---|
-| Failed attempt | `llm_runs/FAILED_numpy_missing_20260921T232740_042624Z` | First try; stopped before training because NumPy was missing from the environment | No model, no results |
-| Setup check | `llm_runs/20260921T232818_017855Z` | 10 steps, lr 0.001, classroom corpus | Pipeline works; barely trained |
-| **Starter** | `llm_runs/20260922T000008_123080Z` | 3000 steps, lr 0.001, classroom corpus only | Used below |
-| Extension v1 (bug) | `llm_runs/20260922T001103_572234Z` | Same, plus extension files whose multi-sentence negation stories were split apart by the notebook | Kept for the record; see "What went wrong" |
-| **Extension v2** | `llm_runs/20260922T001708_046660Z` | Same, plus fixed extension files | Used below |
+| Failed attempt | [llm_runs/FAILED_numpy_missing_20260921T232740_042624Z](llm_runs/FAILED_numpy_missing_20260921T232740_042624Z) | First try; stopped before training because NumPy was missing from the environment | No model, no results |
+| Setup check | [llm_runs/20260921T232818_017855Z](llm_runs/20260921T232818_017855Z) | 10 steps, lr 0.001, classroom corpus | Pipeline works; barely trained |
+| **Starter** | [llm_runs/20260922T000008_123080Z](llm_runs/20260922T000008_123080Z) | 3000 steps, lr 0.001, classroom corpus only | Used below |
+| Extension v1 (bug) | [llm_runs/20260922T001103_572234Z](llm_runs/20260922T001103_572234Z) | Same, plus extension files whose multi-sentence negation stories were split apart by the notebook | Kept for the record; see "What went wrong" |
+| **Extension v2** | [llm_runs/20260922T001708_046660Z](llm_runs/20260922T001708_046660Z) | Same, plus fixed extension files | Used below |
 
-Executed notebooks (outputs kept): `custom_llm_setup10.executed.ipynb`,
-`custom_llm_starter.executed.ipynb`, `custom_llm_extension_v1.executed.ipynb`,
-`custom_llm_extension_v2.executed.ipynb`. Each is the supplied `custom_llm.ipynb` with only
-the settings cell differing for the 10-step run.
+Executed notebooks (outputs kept):
+[custom_llm_setup10.executed.ipynb](custom_llm_setup10.executed.ipynb),
+[custom_llm_starter.executed.ipynb](custom_llm_starter.executed.ipynb),
+[custom_llm_extension_v1.executed.ipynb](custom_llm_extension_v1.executed.ipynb),
+[custom_llm_extension_v2.executed.ipynb](custom_llm_extension_v2.executed.ipynb). Each is the
+supplied [custom_llm.ipynb](custom_llm.ipynb) with only the settings cell differing for the
+10-step run. To open and run one yourself: `pip install -r requirements.txt` (or the venv
+commands under "Rerun the evals and the chat" below), then open the notebook in Jupyter or
+VS Code with that environment and choose Run All; Colab also works using the default CPU
+runtime.
 
 Environment fixes I made: git on Windows converted line endings to CRLF, which broke the
 notebook's SHA-256 check of the eval suite; I restored the original bytes (they match the
@@ -32,8 +38,10 @@ installed because the notebook needs it and `requirements.txt` does not list it.
 
 ## My three choices
 
-- **Corpus:** the classroom corpus first; then classroom plus `corpus/opposites.txt` and
-  `corpus/negation.txt` (420 unique lines each; generator: `tools/make_extension_corpus.py`).
+- **Corpus:** the classroom corpus first; then classroom plus
+  [corpus/opposites.txt](corpus/opposites.txt) and [corpus/negation.txt](corpus/negation.txt)
+  (420 unique lines each; generator:
+  [tools/make_extension_corpus.py](tools/make_extension_corpus.py)).
 - **Training steps:** 10 for the setup check, then 3000 for both real experiments, so the
   corpus is the only difference between them.
 - **Learning rate:** 0.001 (the notebook default, used with its warmup and cosine decay).
@@ -55,10 +63,24 @@ moves the weights and would need far more steps to get anywhere.
 | Parameters | 111,872 | 130,240 |
 | Training time (CPU) | 18.3 s | 21.6 s |
 
-Links: `llm_runs/<run>/corpus_manifest.json`, `vocabulary_report.json`, `split.json`. The split
-is by passage (90/10), not by source file, so validation tests new sentences from the same
-templates. My extension files are my own template-generated text, so there is no permission
-issue and no PDF extraction to check.
+Links: starter run
+[corpus_manifest.json](llm_runs/20260922T000008_123080Z/corpus_manifest.json),
+[vocabulary_report.json](llm_runs/20260922T000008_123080Z/vocabulary_report.json),
+[split.json](llm_runs/20260922T000008_123080Z/split.json); extension v2
+[corpus_manifest.json](llm_runs/20260922T001708_046660Z/corpus_manifest.json),
+[vocabulary_report.json](llm_runs/20260922T001708_046660Z/vocabulary_report.json). My
+extension files are my own template-generated text, so there is no permission issue and no
+PDF extraction to check.
+
+My corpus is the classroom's synthetic domain sentences (customers, hospitals, schools, and
+similar templated scenes), plus, for the extension experiment, my own opposites and negation
+sentences. It can teach those fixed sentence shapes and the vocabulary inside them; it cannot
+teach anything outside that — real-world facts, contractions, or word combinations never
+shown to it. I hold out 10% of passages, never used for weight updates, so validation loss at
+least reflects passages the model didn't directly train on — though because the corpus is
+synthetic and repeats the same templates, a held-out passage is still built from a pattern the
+model has seen elsewhere, so this tests memorization-resistance more than real generalization
+to new templates.
 
 ## What I expected vs. what happened
 
@@ -72,20 +94,26 @@ did not predict that the extension files would make only 1 of 24 extension cases
 
 ## Fixed eval suite results (48 cases, unchanged)
 
-The eval scores whether the model gives the correct word the highest probability among four
-choices. Ties score 0. Cases with words the model does not have are **unscorable and count as
-0** in the all-case rate. Free continuations are saved separately and are not the score.
+Suite: [evals/language_evals.json](evals/language_evals.json). Runner:
+[run_evals.py](run_evals.py). The eval scores whether the model gives the correct word the
+highest probability among four choices. Ties score 0. Cases with words the model does not
+have are **unscorable and count as 0** in the all-case rate. Free continuations are saved
+separately and are not the score.
 
 | Experiment | Stage | Correct / 48 | Scorable / 48 | Accuracy among scorable | Full results |
 |---|---|---|---|---|---|
-| Starter corpus | Untrained | 9 | 24 | 37.5% | `llm_runs/20260922T000008_123080Z/language_evals/untrained/` |
-| Starter corpus | Trained (3000) | 20 | 24 | 83.3% | `llm_runs/20260922T000008_123080Z/language_evals/final/` |
-| Expanded corpus (v2) | Untrained | 7 | 25 | 28.0% | `llm_runs/20260922T001708_046660Z/language_evals/untrained/` |
-| Expanded corpus (v2) | Trained (3000) | 25 | 25 | 100% | `llm_runs/20260922T001708_046660Z/language_evals/final/` |
+| Starter corpus | Untrained | 9 | 24 | 37.5% | [eval_summary.json](llm_runs/20260922T000008_123080Z/language_evals/untrained/eval_summary.json) · [eval_results.csv](llm_runs/20260922T000008_123080Z/language_evals/untrained/eval_results.csv) |
+| Starter corpus | Trained (3000) | 20 | 24 | 83.3% | [eval_summary.json](llm_runs/20260922T000008_123080Z/language_evals/final/eval_summary.json) · [eval_results.csv](llm_runs/20260922T000008_123080Z/language_evals/final/eval_results.csv) |
+| Expanded corpus (v2) | Untrained | 7 | 25 | 28.0% | [eval_summary.json](llm_runs/20260922T001708_046660Z/language_evals/untrained/eval_summary.json) · [eval_results.csv](llm_runs/20260922T001708_046660Z/language_evals/untrained/eval_results.csv) |
+| Expanded corpus (v2) | Trained (3000) | 25 | 25 | 100% | [eval_summary.json](llm_runs/20260922T001708_046660Z/language_evals/final/eval_summary.json) · [eval_results.csv](llm_runs/20260922T001708_046660Z/language_evals/final/eval_results.csv) |
 
 (Extension v1, for the record: untrained 6/48 with 25 scorable; trained 25/48 with 25 scorable,
-identical scores to v2 on this eval.) Each folder has `eval_results.csv`, `eval_results.json`,
-`eval_summary.json`, `eval_cases.json`. All 48 cases side by side:
+identical scores to v2 on this eval — folders under
+[llm_runs/20260922T001103_572234Z/language_evals/](llm_runs/20260922T001103_572234Z/language_evals/).)
+Each folder also has `eval_results.json` and `eval_cases.json`. Leakage check for each run:
+[eval_separation.json](llm_runs/20260922T000008_123080Z/eval_separation.json) (starter),
+[eval_separation.json](llm_runs/20260922T001708_046660Z/eval_separation.json) (extension v2).
+All 48 cases side by side:
 [evidence/all_48_cases_comparison.csv](evidence/all_48_cases_comparison.csv).
 
 By group, trained models:
@@ -127,8 +155,10 @@ By group, trained models:
   negation, 0 of 3 became scorable. I looked at the list of missing words only **after**
   training, to explain the failures, and deliberately did not use it to write more teaching
   data (that would turn the eval into an answer list).
-- **My own probe** (not the eval; `tools/negation_probe.py`, `evidence/probe_results.json`),
-  on new word combinations unseen in training:
+- **My own probe** (not the eval;
+  [tools/negation_probe.py](tools/negation_probe.py),
+  [evidence/probe_results.json](evidence/probe_results.json)), on new word combinations
+  unseen in training:
 
   | model (trained) | opposites | negation (word actually done beats negated word) |
   |---|---|---|
@@ -149,16 +179,19 @@ survived intact and the model never saw "did not X ... did Y ... Y" together. I 
 checking how many source lines survived as one passage (615 of 840, and 0 of the 68 stories),
 fixed the generator to join a story's sentences with commas (all 840 lines survive; 223 of
 the 420 negation lines, 53%, have the final copy step; in v1 only 68 stories had it, and none
-survived), and retrained as v2. v1 is kept, not deleted.
+survived), and retrained as v2. v1 is kept, not deleted: the original buggy file is preserved
+at [run_notes/extension_v1_negation_SPLIT_BUG.txt](run_notes/extension_v1_negation_SPLIT_BUG.txt).
 The fix did not change the 48-case scores (same 25/48) because the negation cases are
 unscorable; it did change the probe (49% -> 59%). Because the eval writes stories with periods
 and my files use commas, the model also has to generalize across punctuation.
 
 ## How eval material was kept out of training
 
-- The eval suite lives in `evals/`, outside `corpus/`; `CORPUS_FOLDER` is `corpus`.
+- The eval suite lives in [evals/](evals/), outside `corpus/`; `CORPUS_FOLDER` is `corpus`.
 - The notebook withholds generated sentences containing reserved eval prefixes (160 passages)
-  and rejects exact test prefixes in imported files: `eval_separation.json` in each run.
+  and rejects exact test prefixes in imported files:
+  [eval_separation.json](llm_runs/20260922T000008_123080Z/eval_separation.json) (starter),
+  [eval_separation.json](llm_runs/20260922T001708_046660Z/eval_separation.json) (extension v2).
 - My generator reads the eval file only to delete any generated line containing a whole eval
   prompt (0 were deleted). No eval prompt, and no prompt plus any of its four choices, appears
   in the saved `corpus.txt` of any run (setup, starter, extension v1, extension v2; checked by
@@ -172,9 +205,18 @@ and my files use commas, the model also has to generalize across punctuation.
 
 ## Loss, samples and inspection evidence
 
-Fixed panels of 20 training and 20 validation documents. Full data: `history.json`,
-`training.csv`, `training_curves.svg` in each run folder. Losses between different corpora and
-vocabularies are not directly comparable.
+Fixed panels of 20 training and 20 validation documents. Full loss history (every measured
+value; the notebook only evaluates at 0%, 50%, and 100% of steps, so 3 rows per run is the
+complete history, not an excerpt):
+[history.json](llm_runs/20260922T000008_123080Z/history.json) (starter),
+[history.json](llm_runs/20260922T001708_046660Z/history.json) (extension v2), also as
+[training.csv](llm_runs/20260922T000008_123080Z/training.csv) /
+[training.csv](llm_runs/20260922T001708_046660Z/training.csv). Config for each run:
+[config.json](llm_runs/20260922T000008_123080Z/config.json) (starter),
+[config.json](llm_runs/20260922T001708_046660Z/config.json) (extension v2). Training summary:
+[training_summary.json](llm_runs/20260922T000008_123080Z/training_summary.json) (starter),
+[training_summary.json](llm_runs/20260922T001708_046660Z/training_summary.json)
+(extension v2). Losses between different corpora and vocabularies are not directly comparable.
 
 | Run | step | training loss | validation loss |
 |---|---|---|---|
@@ -186,25 +228,40 @@ vocabularies are not directly comparable.
 ![Extension v2 loss curves](llm_runs/20260922T001708_046660Z/training_curves.svg)
 
 Loss barely changed between step 1500 and 3000 in the starter run (validation 0.718 -> 0.706).
-Samples (same start and settings; full files in each run's `samples/`): the starter model's
-step-0 sample is word salad ("pear professor bond doctor course harvest team ..."), and by step
-1500 and 3000 it writes "our school has a question about the new educator and lesson ." (a
-corpus-style sentence; the same at both steps). Extension v2 step 0 is also word salad; at step
-3000 it writes "the report about the shopper explains the purchase in detail ."
+Samples (same start and settings; same three checkpoints — 0%, 50%, 100% of steps — in every
+run): starter
+[step_0000.txt](llm_runs/20260922T000008_123080Z/samples/step_0000.txt) is word salad ("pear
+professor bond doctor course harvest team ..."), and by
+[step_1500.txt](llm_runs/20260922T000008_123080Z/samples/step_1500.txt) and
+[step_3000.txt](llm_runs/20260922T000008_123080Z/samples/step_3000.txt) it writes "our school
+has a question about the new educator and lesson ." (a corpus-style sentence, unchanged
+between those two checkpoints). Extension v2
+[step_0000.txt](llm_runs/20260922T001708_046660Z/samples/step_0000.txt) is also word salad; by
+[step_3000.txt](llm_runs/20260922T001708_046660Z/samples/step_3000.txt) it writes "the report
+about the shopper explains the purchase in detail ." (see also
+[step_1500.txt](llm_runs/20260922T001708_046660Z/samples/step_1500.txt)).
 
-Token "customer" (starter run, `inspection.json`, `tokenization.json`): token ID 28. In the
-3000-step starter run its first embedding coordinate started at -0.05759 with gradient
+Token "customer" (starter run):
+[tokenization.json](llm_runs/20260922T000008_123080Z/tokenization.json) gives it token ID 28.
+[inspection.json](llm_runs/20260922T000008_123080Z/inspection.json) has its full 64-number
+embedding before and after training; the first coordinate started at -0.05759 with gradient
 +0.000693 and moved by 0.00001 in the first update, because the learning rate is still warming
-up (1e-05 at step 1). In the 10-step run the warmup is one step, so the same coordinate moved
-by about 0.001 (from -0.05759 to -0.05859). After "the customer" the untrained model was
-close to a shrug over its 136 words (the largest single probability was 0.016; uniform would
-be 1/136 = 0.0074); after 3000 steps the top next words were "reviewed" (0.178),
-"recommended" (0.171), "ordered" (0.169), "selected" (0.163).
+up (1e-05 at step 1). In the 10-step run
+([inspection.json](llm_runs/20260921T232818_017855Z/inspection.json)) the warmup is one step,
+so the same coordinate moved by about 0.001 (from -0.05759 to -0.05859). Also in
+`inspection.json`: after "the customer" the untrained model was close to a shrug over its 136
+words (the largest single probability was 0.016; uniform would be 1/136 = 0.0074); after 3000
+steps the top next words were "reviewed" (0.178), "recommended" (0.171), "ordered" (0.169),
+"selected" (0.163).
 
-Temperature comparison (`temperature_comparison.json`, samples at 0.3, 0.8, 1.2, no retraining):
-the first sample is identical at all three temperatures in both models; later samples differ
-in places, for example the starter's second sample ends "different investment" at 0.3 and
-"different deposit" at 0.8. Only sampling changed; no weights changed.
+Temperature comparison
+([temperature_comparison.json](llm_runs/20260922T000008_123080Z/temperature_comparison.json)
+starter,
+[temperature_comparison.json](llm_runs/20260922T001708_046660Z/temperature_comparison.json)
+extension v2; samples at 0.3, 0.8, 1.2, no retraining): the first sample is identical at all
+three temperatures in both models; later samples differ in places, for example the starter's
+second sample ends "different investment" at 0.3 and "different deposit" at 0.8. Only sampling
+changed; no weights changed.
 
 ### Explanations (in my own words)
 
@@ -232,18 +289,22 @@ temperatures mean the text will be more and less predictable. This only changes 
 picked at generation time; it does not change any weights (see the temperature comparison
 above, where the same trained model gives different samples at 0.3, 0.8, and 1.2).
 
-**Why attention cannot see future tokens.** Allowing the model to peek at the word it is
-trying to guess would defeat the purpose. It would have learned nothing from training, and the
-prediction wouldn't actually be a prediction. Blocking future tokens during training keeps
-training consistent and relevant to how the model is actually used afterward, when future
-words genuinely don't exist yet.
+**What attention combines, and why it cannot see future tokens.** At each position, attention
+lets the model blend information from every earlier token in the prompt, weighted by how
+relevant each one is to predicting the next word — that's how "the customer" and "explains
+the" both shape the guess for what comes after, not just the single most recent word.
+Allowing it to also peek at the word it is trying to guess would defeat the purpose: it would
+have learned nothing from training, and the prediction wouldn't actually be a prediction.
+Blocking future tokens during training keeps training consistent and relevant to how the
+model is actually used afterward, when future words genuinely don't exist yet.
 
 ## Chat interface
 
-Terminal interface: `chat.py`. It loads `model.pt` and its saved vocabulary, and each prompt
-starts fresh (no memory). It is a tiny language model that continues text, not an assistant.
-Context is 48 tokens; unknown words are reported and mapped to `<UNK>`. Replying does not
-retrain the model or touch the corpus.
+Terminal interface: [chat.py](chat.py). It loads
+[model.pt](llm_runs/20260922T001708_046660Z/model.pt) and its saved vocabulary, and each
+prompt starts fresh (no memory). It is a tiny language model that continues text, not an
+assistant. Context is 48 tokens; unknown words are reported and mapped to `<UNK>`. Replying
+does not retrain the model or touch the corpus.
 
 ```bash
 .venv/Scripts/python chat.py --model llm_runs/20260922T001708_046660Z/model.pt --transcript my_chat.json
@@ -285,9 +346,15 @@ python -m venv .venv
 .venv/Scripts/python run_evals.py --model llm_runs/20260922T001708_046660Z/model.pt --output results/my-evals
 ```
 
-The rerun of extension v2 gave results identical to the notebook (same model hash, identical
-per-case CSV): `evidence/rerun_extension_v2_final/`. To rerun a notebook: open it in Jupyter
-or VS Code with that environment and Run All (each run creates a new `llm_runs/` folder and ZIP).
+(dependencies also listed in [requirements.txt](requirements.txt); NumPy isn't listed there
+but is required — see "Runs" above.) The saved model to load is
+[llm_runs/20260922T001708_046660Z/model.pt](llm_runs/20260922T001708_046660Z/model.pt),
+already committed in this repository — no separate download step needed. The rerun of
+extension v2 using [run_evals.py](run_evals.py) gave results identical to the notebook (same
+model hash, identical per-case CSV):
+[evidence/rerun_extension_v2_final/](evidence/rerun_extension_v2_final/). To rerun a notebook:
+open it in Jupyter or VS Code with that environment and Run All (each run creates a new
+`llm_runs/` folder and ZIP).
 
 ## One limitation and my next experiment
 
