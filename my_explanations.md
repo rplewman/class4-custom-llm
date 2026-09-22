@@ -6,16 +6,20 @@ that run's `inspection.json`.
 
 ## Probabilities, loss, gradient and weight change
 
-1. Probabilities are nearly equal because the model has no preference yet.
-2. Loss is defined as how surprised the model is by the real next word.
-3. The gradient says, for each weight, which way the loss changes if you nudge it. A
-   positive gradient means nudging up increases surprise.
-4. The weight would move down with a positive gradient.
-5. The probability on the words that really follow "the customer" goes up and loss goes
-   down.
-
-Real example from the run: the first coordinate of the "customer" embedding started at
--0.05759, had gradient +0.00069, and was -0.05859 after step 1 (learning rate 0.001).
+Probabilities are nearly equal at the start because the model has no preference yet. Loss is
+how surprised the model is by the real next word. The gradient says, for each weight, which
+way the loss changes if you nudge it: a positive gradient means nudging up increases
+surprise, so that weight moves down instead; a negative gradient means the opposite, so it
+moves up. This happens separately for every one of the model's 111,872 weights at once, each
+moving in whichever direction reduces its own contribution to the surprise, not all in the
+same direction. In the run, the first coordinate of the "customer" embedding had gradient
++0.000693 and moved from -0.05759 to -0.05859 (learning rate 0.001) in the 10-step run. It's
+called gradient descent because the gradient tells you which way is downhill, and each step
+actually descends that way. As probability on the right word goes up, loss goes down. The
+model is "learning," becoming more correctly able to anticipate the next word: over the full
+3000-step run this dropped loss from 4.93 to 0.68 in the starter run. But the gradient and
+the learning rate have to work in concert: both need to be appropriately sized, or the model
+won't actually reach the bottom of the valley. It will either move too slowly or overshoot.
 
 ## Token, token ID, and embedding
 

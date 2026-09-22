@@ -75,9 +75,9 @@ PDF extraction to check.
 My corpus is the classroom's synthetic domain sentences (customers, hospitals, schools, and
 similar templated scenes), plus, for the extension experiment, my own opposites and negation
 sentences. It can teach those fixed sentence shapes and the vocabulary inside them; it cannot
-teach anything outside that — real-world facts, contractions, or word combinations never
+teach anything outside that: real-world facts, contractions, or word combinations never
 shown to it. I hold out 10% of passages, never used for weight updates, so validation loss at
-least reflects passages the model didn't directly train on — though because the corpus is
+least reflects passages the model didn't directly train on. That said, because the corpus is
 synthetic and repeats the same templates, a held-out passage is still built from a pattern the
 model has seen elsewhere, so this tests memorization-resistance more than real generalization
 to new templates.
@@ -108,7 +108,7 @@ separately and are not the score.
 | Expanded corpus (v2) | Trained (3000) | 25 | 25 | 100% | [eval_summary.json](llm_runs/20260922T001708_046660Z/language_evals/final/eval_summary.json) · [eval_results.csv](llm_runs/20260922T001708_046660Z/language_evals/final/eval_results.csv) |
 
 (Extension v1, for the record: untrained 6/48 with 25 scorable; trained 25/48 with 25 scorable,
-identical scores to v2 on this eval — folders under
+identical scores to v2 on this eval; folders under
 [llm_runs/20260922T001103_572234Z/language_evals/](llm_runs/20260922T001103_572234Z/language_evals/).)
 Each folder also has `eval_results.json` and `eval_cases.json`. Leakage check for each run:
 [eval_separation.json](llm_runs/20260922T000008_123080Z/eval_separation.json) (starter),
@@ -228,7 +228,7 @@ complete history, not an excerpt):
 ![Extension v2 loss curves](llm_runs/20260922T001708_046660Z/training_curves.svg)
 
 Loss barely changed between step 1500 and 3000 in the starter run (validation 0.718 -> 0.706).
-Samples (same start and settings; same three checkpoints — 0%, 50%, 100% of steps — in every
+Samples (same start and settings; same three checkpoints, 0%, 50%, 100% of steps, in every
 run): starter
 [step_0000.txt](llm_runs/20260922T000008_123080Z/samples/step_0000.txt) is word salad ("pear
 professor bond doctor course harvest team ..."), and by
@@ -274,13 +274,19 @@ be completely unrelated in meaning. The ID is just a slot number, not a measure 
 the 64-number embedding is where similarity actually lives, and it's what training adjusts.
 
 **Loss, gradient, and weight change.** Loss is how surprised the model is by the real next
-word. The gradient says, for each weight, which way the loss changes if you nudge it — a
-positive gradient means nudging up increases surprise, so the weight moves down instead, by
-roughly the learning rate. In the run, the first coordinate of the "customer" embedding had
-gradient +0.000693 and moved from -0.05759 to -0.05859 (learning rate 0.001) in the 10-step
-run. Repeating this for every weight, every step, is what makes the probability on words that
-really follow "the customer" go up and the loss go down (4.93 -> 0.68 over 3000 steps in the
-starter run).
+word. The gradient says, for each weight, which way the loss changes if you nudge it: a
+positive gradient means nudging up increases surprise, so that weight moves down instead; a
+negative gradient means the opposite, so it moves up. This happens separately for every one
+of the model's 111,872 weights at once, each moving in whichever direction reduces its own
+contribution to the surprise, not all in the same direction. In the run, the first coordinate
+of the "customer" embedding had gradient +0.000693 and moved from -0.05759 to -0.05859
+(learning rate 0.001) in the 10-step run. It's called gradient descent because the gradient
+tells you which way is downhill, and each step actually descends that way. As probability on
+the right word goes up, loss goes down. The model is "learning," becoming more correctly able
+to anticipate the next word: over the full 3000-step run this dropped loss from 4.93 to 0.68
+in the starter run. But the gradient and the learning rate have to work in concert: both need
+to be appropriately sized, or the model won't actually reach the bottom of the valley. It will
+either move too slowly or overshoot.
 
 **Probabilities becoming a generated word, and temperature.** The model doesn't always output
 the top-probability word; instead it generates samples where a word with 30% probability is
@@ -291,7 +297,7 @@ above, where the same trained model gives different samples at 0.3, 0.8, and 1.2
 
 **What attention combines, and why it cannot see future tokens.** At each position, attention
 lets the model blend information from every earlier token in the prompt, weighted by how
-relevant each one is to predicting the next word — that's how "the customer" and "explains
+relevant each one is to predicting the next word. That's how "the customer" and "explains
 the" both shape the guess for what comes after, not just the single most recent word.
 Allowing it to also peek at the word it is trying to guess would defeat the purpose: it would
 have learned nothing from training, and the prediction wouldn't actually be a prediction.
@@ -323,18 +329,18 @@ session, typed and run by me: transcript
 | the customer is always | the package , not loud . | Unknown word: "always" |
 | the customer is | the merchandise , it was at the market . | Corpus-style completion |
 | the customer can't | the merchandise with another merchandise at the market . | Unknown word: "can't"; the contraction is dropped and the model just continues as if it weren't there |
-| paris is the capital of | patient and patient helped us understand the mei picked the see . | Unknown words: "capital", "paris" — with two of the four prompt words unknown, the reply is closer to noise |
+| paris is the capital of | patient and patient helped us understand the mei picked the see . | Unknown words: "capital", "paris"; with two of the four prompt words unknown, the reply is closer to noise |
 | running is | the local deposit , it was mentioned in the payment . | Unknown word: "running"; falls back to a generic corpus-style sentence |
 | payment is | the opposite of return . | **Invented pairing.** "payment" and "return" never appear near the word "opposite" anywhere in training (checked: 137 total uses of "opposite" in the training text, none involving these two words). The model learned the sentence shape "___ is the opposite of ___ ." and applies it to any noun, whether or not it was ever taught as having an opposite |
 | return is | the opposite of light . | Same invented-pairing behavior as above |
 | heavy is | the opposite of light . | **Memorized.** "heavy is the opposite of light ." is a literal line in the training corpus |
-| light is | the opposite of heavy . | **Generalized, not memorized.** This exact sentence does not appear in training (only the "heavy is..." direction does) — the model produced the reverse direction correctly for a pair it was actually taught, without being shown that direction |
+| light is | the opposite of heavy . | **Generalized, not memorized.** This exact sentence does not appear in training (only the "heavy is..." direction does): the model produced the reverse direction correctly for a pair it was actually taught, without being shown that direction |
 
 Each reply is one random sample at temperature 0.8, so any single reply is a weak signal on
 its own; the probe in the eval section above measures the tendency across 300 items. The main
 limitations visible here: it cannot handle contractions or answer factual questions, unknown
 words are silently ignored rather than causing an error, and it will confidently apply the
-"opposite of" sentence pattern to words that were never taught as having an opposite —
+"opposite of" sentence pattern to words that were never taught as having an opposite:
 learning a syntax template is not the same as learning which words the template actually
 applies to.
 
@@ -347,9 +353,9 @@ python -m venv .venv
 ```
 
 (dependencies also listed in [requirements.txt](requirements.txt); NumPy isn't listed there
-but is required — see "Runs" above.) The saved model to load is
+but is required, see "Runs" above.) The saved model to load is
 [llm_runs/20260922T001708_046660Z/model.pt](llm_runs/20260922T001708_046660Z/model.pt),
-already committed in this repository — no separate download step needed. The rerun of
+already committed in this repository; no separate download step needed. The rerun of
 extension v2 using [run_evals.py](run_evals.py) gave results identical to the notebook (same
 model hash, identical per-case CSV):
 [evidence/rerun_extension_v2_final/](evidence/rerun_extension_v2_final/). To rerun a notebook:
@@ -368,8 +374,8 @@ training). For my next experiment, I would add a few "X has no opposite" style t
 examples, to see whether that curbs the over-application, and I would compare the model's
 saved probability on its top answer for invented pairs versus real trained pairs. I'd predict
 the invented-pair probabilities are lower even when the model still picks a word, since it's
-applying a pattern rather than a fact it actually knows — and if that gap is small or absent,
-it would show the model can't tell the difference at all, which would be worth reporting
+applying a pattern rather than a fact it actually knows. If that gap is small or absent, it
+would show the model can't tell the difference at all, which would be worth reporting
 honestly.
 
 Also worth trying: repeat each run with a second seed to see whether the new-phrasing jump
