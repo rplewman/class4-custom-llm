@@ -290,10 +290,12 @@ either move too slowly or overshoot.
 
 **Probabilities becoming a generated word, and temperature.** The model doesn't always output
 the top-probability word; instead it generates samples where a word with 30% probability is
-picked 30% of the time. Temperature shapes the lottery before drawing: high and low
-temperatures mean the text will be more and less predictable. This only changes how a word is
-picked at generation time; it does not change any weights (see the temperature comparison
-above, where the same trained model gives different samples at 0.3, 0.8, and 1.2).
+picked 30% of the time. Temperature shapes the lottery before drawing: a high temperature
+flattens the odds, giving weaker words a real chance and making the next word more random; a
+low temperature sharpens the odds toward the top choice, making the next word more
+predictable. This only changes how a word is picked at generation time; it does not change
+any weights (see the temperature comparison above, where the same trained model gives
+different samples at 0.3, 0.8, and 1.2).
 
 **What attention combines, and why it cannot see future tokens.** At each position, attention
 lets the model blend information from every earlier token in the prompt, weighted by how
